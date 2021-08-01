@@ -1,6 +1,6 @@
 package types
 
-import "github.com/karmanyaahm/payment-thing/db"
+import "k.malhotra.cc/go/payment-thing/db"
 
 type Key struct {
 	Priv string

@@ -1,8 +1,8 @@
 package currencies
 
 import (
-	"github.com/karmanyaahm/payment-thing/currencies/stellar"
-	"github.com/karmanyaahm/payment-thing/currencies/types"
+	"k.malhotra.cc/go/payment-thing/currencies/stellar"
+	"k.malhotra.cc/go/payment-thing/currencies/types"
 )
 
 func init() {

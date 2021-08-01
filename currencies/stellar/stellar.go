@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karmanyaahm/payment-thing/config"
-	"github.com/karmanyaahm/payment-thing/currencies/types"
-	"github.com/karmanyaahm/payment-thing/db"
+	"k.malhotra.cc/go/payment-thing/config"
+	"k.malhotra.cc/go/payment-thing/currencies/types"
+	"k.malhotra.cc/go/payment-thing/db"
 	"github.com/stellar/go/clients/horizonclient"
 	"github.com/stellar/go/keypair"
 	"github.com/stellar/go/network"

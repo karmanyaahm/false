@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/karmanyaahm/payment-thing/config"
-	"github.com/karmanyaahm/payment-thing/currencies/stellar"
-	"github.com/karmanyaahm/payment-thing/currencies/types"
-	"github.com/karmanyaahm/payment-thing/db"
+	"k.malhotra.cc/go/payment-thing/config"
+	"k.malhotra.cc/go/payment-thing/currencies/stellar"
+	"k.malhotra.cc/go/payment-thing/currencies/types"
+	"k.malhotra.cc/go/payment-thing/db"
 )
 
 func main() {

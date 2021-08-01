@@ -3,6 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/karmanyaahm/payment-thing/config"
+	"github.com/karmanyaahm/payment-thing/currencies/stellar"
+	"github.com/karmanyaahm/payment-thing/currencies/types"
 	"github.com/karmanyaahm/payment-thing/db"
 )
 
@@ -27,3 +30,8 @@ type payment struct {
 func payoff(c db.Currency) {}
 
 func payoffWho(addrs []payment) {}
+func init() {
+	db.Init()
+	s := stellar.New(db.DB, types.Key{Pub: config.Get().Stellar.PubKey, Priv: config.Get().Stellar.PrivKey}, func(_ string, _ uint64, _ db.Money) {})
+	s.In()
+}

@@ -6,10 +6,11 @@ import (
 	"gorm.io/gorm"
 )
 
-var DB gorm.DB
+var DB *gorm.DB
 
 type Currency = int
 type Money = int64
+type UserID = uint64
 
 const (
 	CurrBTC = iota
